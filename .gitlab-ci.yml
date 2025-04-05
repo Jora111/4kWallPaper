@@ -1,0 +1,9 @@
+pages:
+  stage: deploy
+  script:
+    - echo "Деплоим всё, что есть в корне"
+  artifacts:
+    paths:
+      - .   # <-- вот это ключевое изменение!
+  only:
+    - main
